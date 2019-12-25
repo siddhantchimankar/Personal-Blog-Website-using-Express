@@ -1,0 +1,24 @@
+<% include partials/header.ejs %>
+<ul class="list-unstyled">
+
+
+  <li>
+    <h1>Compose</h1>
+  </li>
+  <li> <label>Title</label></li>
+  <form action="/compose" method="post">
+    <div class="form-group">
+
+
+      <li> <input type="text" name="postTitle" class="form-control" id="usr"> </li>
+      <li> <label>Post</label></li>
+      <li> <textarea class="form-control" rows="4" cols="130" name="postBody"></textarea> </li>
+
+
+    </div>
+    <li> <button type="submit" class="btn btn-primary" name="button">Publish</button> </li>
+
+  </form>
+
+</ul>
+<% include partials/footer.ejs %>
